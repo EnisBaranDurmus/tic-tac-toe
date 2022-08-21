@@ -1,0 +1,11 @@
+<div class="disabledbutton" (click)="disableDiv()" #idResult>
+    <h3 style="position: relative; justify-content: center;">Draw</h3> 
+</div>
+<main>
+    <p style="width: max-content;">The winner is : {{winner}}</p>
+    <p></p>
+    <br>
+    <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
+    </app-square>
+    <button mat-flat-button color="warn" (click)="newGame()" style="margin-top: 1.5rem;">New Game</button>
+</main>

@@ -1,0 +1,25 @@
+main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 0px;
+}
+
+app-square {
+    justify-content: center;
+    height: 100px;
+}
+
+.disabledbutton {
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+}
+.enableButton{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.296);
+    position: fixed;
+}
